@@ -27,6 +27,26 @@ Espero que gostem, qualquer dúvida fiquem a vontade para entrar em contato - is
 * Maven
 * Java
 
+### Setup necessário ###
+
+
+* Instalar o java 8.
+
+  ```
+  sudo apt-get install oracle-java8-installer
+  ```
+
+* Instalar o maven.
+
+  ```
+  sudo apt install maven
+  ```
+
+* Instalar o plugin do cucumber no eclipse.
+
+  Ir no marketplace > Buscar por cucumber > Instalar "cucumber eclipe plugin"
+
+
 ### Estrutura do projeto ###
 
 * Common - Classes onde terão métodos em comum que poderão ser usadas por outras classes.
