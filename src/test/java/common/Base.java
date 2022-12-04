@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.EnvironmentProperties;
@@ -80,4 +82,14 @@ public class Base {
 	        WebElement textLocator = Base.waitElement(locator);
 	        return textLocator.getText();
 	    }
+
+	    public static void pageUp() {
+			Actions page = new Actions(driver);
+			page.sendKeys(Keys.PAGE_UP).build().perform();
+		}
+
+	public static void pageDown() {
+		Actions page = new Actions(driver);
+		page.sendKeys(Keys.PAGE_DOWN).build().perform();
+	}
 }
